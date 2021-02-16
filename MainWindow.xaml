@@ -1,0 +1,42 @@
+﻿<Window x:Class="LR1._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR1._2"
+        mc:Ignorable="d"
+     Title="Філіп Артур Ларкін" Height="406" Width="467" WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="20">
+
+        <!-- start with title for Top Trumps card-->
+        <Label HorizontalAlignment="Stretch" Content="Toп 10 Автор ==&gt; Філіп Артур Ларкін" BorderBrush="Black" 
+               BorderThickness="1" Background="Bisque" HorizontalContentAlignment="Center" FontWeight="Bold" />
+
+        <!-- now have image on left, scores on right -->
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,20">
+            <StackPanel Orientation="Horizontal">
+
+                <!-- image of George Orwell -->
+                <Border BorderBrush="Black" BorderThickness="1" Margin="20" Height="110">
+                    <Image Width="181" Source="/1.jpeg" Height="111" />
+                </Border>
+
+                <!-- his scores in vertical panel -->
+                <StackPanel Margin="20" VerticalAlignment="Center" Width="152">
+
+                    <Label Content="Жанр - Лірика" FontStyle="Italic" Margin="0,0,0,20" />
+                    <Label Content="Мова- англійська" FontStyle="Italic" Margin="0,0,0,20" />
+                    <Label Content="Країна - Великобританія " FontStyle="Italic" Margin="0,0,0,20" />
+                    <Label Content="Рід - Прозаїк, поет" FontStyle="Italic" Margin="0,0,0,20" />
+
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+        <TextBlock Text="Філіп Артур Ларкін (9 серпня 1922 року, Ковентрі - 2 грудня 1985, Кінгстон-апон-Халл) - англійський поет, письменник і джазовий критик" 
+               FontStyle="Italic" TextWrapping="WrapWithOverflow" TextTrimming="WordEllipsis" Height="51" />
+
+    </StackPanel>
+
+</Window>
